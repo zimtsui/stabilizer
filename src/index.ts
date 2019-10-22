@@ -19,8 +19,7 @@ class Stabilizer {
             * this.attenuationRatio(now - this.lastTime);
     }
 
-    set(newValue: number): number {
-        const now = Date.now();
+    set(newValue: number, now = Date.now()): number {
         const period = now - this.lastTime;
         this.stableValue
             = this.stableValue * this.attenuationRatio(period)

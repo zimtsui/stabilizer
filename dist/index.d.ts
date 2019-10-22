@@ -9,7 +9,7 @@ declare class Stabilizer {
     constructor(T: number);
     private attenuationRatio;
     get(now?: number): number;
-    set(newValue: number): number;
+    set(newValue: number, now?: number): number;
 }
 export default Stabilizer;
 export { Stabilizer };
