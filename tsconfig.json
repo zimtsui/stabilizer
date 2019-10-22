@@ -1,0 +1,16 @@
+{
+    "extends": "./tsconfig-base.json",
+    "compilerOptions": {
+        "lib": [
+            "esnext",
+        ],
+        "composite": true,
+        "declaration": true,
+        "rootDir": "./src/",
+        "outDir": "./dist/",
+        "noUnusedLocals": true
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}

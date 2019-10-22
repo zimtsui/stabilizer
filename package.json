@@ -1,0 +1,27 @@
+{
+    "name": "stabilizer",
+    "version": "0.0.1",
+    "description": "",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "test": "node ./dist/test",
+        "build": "tsc -b"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zimtsui/stabilizer.git"
+    },
+    "author": "Zim",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/zimtsui/stabilizer/issues"
+    },
+    "homepage": "https://github.com/zimtsui/stabilizer#readme",
+    "devDependencies": {
+        "typescript": "^3.6.4"
+    },
+    "dependencies": {
+        "@types/node": "^12.11.2"
+    }
+}
