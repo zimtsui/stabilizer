@@ -142,7 +142,7 @@
         "signature": "b6abe42600e601fcf4a85f9721dae694212d411658169cf3c35c657e7cd99a11"
       },
       "./src/continuous-moving-average.ts": {
-        "version": "986ef06ecc0f4f6c24682036a0ca8213dd5b927c88cae27de8283cde061b9cda",
+        "version": "98549f96ad6510c169de504fbd995834d8c64ca7107a87c6cffe806385a587e5",
         "signature": "8060344966c2c46e88a2db752b199546fad225f5e3149d15dd4fe856a1ce21b2"
       },
       "./src/exponential-moving-time-average.ts": {

@@ -25,10 +25,6 @@ class ContinuousMovingAverage {
                 * (this.q[2].startTime - this.q[1].startTime);
             this.q.shift();
         }
-        if (
-            this.q.length
-            && this.q[0].startTime < now - this.reserveFor
-        ) this.q[0].startTime = now - this.reserveFor;
     }
 
     public get(now = Date.now()): number {
