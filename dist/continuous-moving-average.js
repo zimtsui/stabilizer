@@ -30,20 +30,14 @@ class ContinuousMovingAverage {
             return 0;
         if (this.q.length === 1)
             return this.q[0].value;
-        return (this.q[0].value * (this.q[1].startTime - this.q[0].startTime)
+        return (this.q[0].value * (this.q[1].startTime - (now - this.reserveFor))
             + this.sum
             + this.q[-1].value * (now - this.q[-1].startTime)) / this.reserveFor;
     }
     set(value, now = Date.now()) {
-        if (this.q.length)
-            this.q.push({
-                value, startTime: now,
-            });
-        else
-            this.q.push({
-                value,
-                startTime: now - this.reserveFor,
-            });
+        this.q.push({
+            value, startTime: now,
+        });
         if (this.q.length >= 3)
             this.sum
                 += this.q[-2].value
