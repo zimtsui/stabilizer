@@ -43,10 +43,15 @@ class ContinuousMovingAverage {
     }
 
     public set(value: number, now = Date.now()): number {
-        // this.clean(now);
-        this.q.push({
-            value, startTime: now,
-        });
+        if (this.q.length)
+            this.q.push({
+                value, startTime: now,
+            });
+        else
+            this.q.push({
+                value,
+                startTime: now - this.reserveFor,
+            });
         if (this.q.length >= 3) this.sum
             += this.q[-2].value
             * (now - this.q[-2].startTime);
