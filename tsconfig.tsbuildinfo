@@ -133,12 +133,32 @@
         "version": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8",
         "signature": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8"
       },
-      "./src/index.ts": {
-        "version": "469ab2433bc790ab3cd535e3067f05fe4127abcfd6effb5b31cd3195f44244fe",
-        "signature": "c7f6480549aec92c67887846f579e864f6b6b0137af2236d47c16018e66d6f6d"
+      "./node_modules/queue/dist/parse-natural.d.ts": {
+        "version": "d2588878ba44c241a07305b295f1ec4f4a8a0df4c7ae956a6182315583be40f1",
+        "signature": "d2588878ba44c241a07305b295f1ec4f4a8a0df4c7ae956a6182315583be40f1"
       },
-      "./src/test.ts": {
-        "version": "c2fb39abb93761bba03312b6dc0aef4289f88d65a7b15064f00362cd3f9bad13",
+      "./node_modules/queue/dist/index.d.ts": {
+        "version": "b6abe42600e601fcf4a85f9721dae694212d411658169cf3c35c657e7cd99a11",
+        "signature": "b6abe42600e601fcf4a85f9721dae694212d411658169cf3c35c657e7cd99a11"
+      },
+      "./src/continuous-moving-average.ts": {
+        "version": "366800754c6a66509f3786096d724b82bdda2dd409b407aa2eb0a56d6308bbf0",
+        "signature": "350a19e1002b623d221ca91a8550b0f4bc4493f8e5fbd9b3215791b99ebd222e"
+      },
+      "./src/exponential-moving-time-average.ts": {
+        "version": "3946a69cf5483297240e64b85618711b65a8d7133ee67f343f0ce662e9a7b1f2",
+        "signature": "a0512ee5dfc1fd6e7d887d33b2b65da9152d69eca07ea260d94dfe3004bb7d5d"
+      },
+      "./src/index.ts": {
+        "version": "14ad52df50d3f0a2db9ca27208027c28e617598c0ea10ef9c26372744e572387",
+        "signature": "f8c7c84418b0ca511a563856e74799848ba2a8a60b25d48a7ab84cc72deeb7af"
+      },
+      "./src/test-cma.ts": {
+        "version": "035541e6131f23a3ee2108aad719e0b3f427e8dd7f926302c5dc7c5cfd65836f",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+      },
+      "./src/test-emta.ts": {
+        "version": "0076f1a7ac8d190e582888f9937e828d15a54b9b3b7b5a125e21f936a2ca0a77",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       },
       "./node_modules/@types/node/globals.d.ts": {
@@ -541,13 +561,48 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "./src/index.ts": [
+      "./node_modules/queue/dist/parse-natural.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "./src/test.ts": [
+      "./node_modules/queue/dist/index.d.ts": [
+        "./node_modules/queue/dist/parse-natural.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/continuous-moving-average.ts": [
+        "./node_modules/queue/dist/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/exponential-moving-time-average.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/index.ts": [
+        "./src/exponential-moving-time-average.ts",
+        "./src/continuous-moving-average.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/test-cma.ts": [
+        "./src/index.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/test-emta.ts": [
         "./src/index.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -1111,6 +1166,23 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "./node_modules/queue/dist/parse-natural.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./node_modules/queue/dist/index.d.ts": [
+        "./node_modules/queue/dist/parse-natural.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/index.ts": [
+        "./src/exponential-moving-time-average.ts",
+        "./src/continuous-moving-average.ts"
+      ],
       "./node_modules/@types/node/globals.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -1503,6 +1575,12 @@
       "./node_modules/typescript/lib/lib.es2019.symbol.d.ts",
       "./node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "./node_modules/typescript/lib/lib.esnext.bigint.d.ts",
+      "./node_modules/queue/dist/parse-natural.d.ts",
+      "./node_modules/queue/dist/index.d.ts",
+      "./src/continuous-moving-average.ts",
+      "./src/exponential-moving-time-average.ts",
+      "./src/index.ts",
+      "./src/test-emta.ts",
       "./node_modules/@types/node/globals.d.ts",
       "./node_modules/@types/node/assert.d.ts",
       "./node_modules/@types/node/async_hooks.d.ts",
@@ -1548,8 +1626,7 @@
       "./node_modules/@types/node/ts3.2/util.d.ts",
       "./node_modules/@types/node/ts3.2/globals.d.ts",
       "./node_modules/@types/node/ts3.2/index.d.ts",
-      "./src/index.ts",
-      "./src/test.ts"
+      "./src/test-cma.ts"
     ]
   },
   "version": "3.6.4"
