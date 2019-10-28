@@ -142,8 +142,8 @@
         "signature": "b6abe42600e601fcf4a85f9721dae694212d411658169cf3c35c657e7cd99a11"
       },
       "./src/continuous-moving-average.ts": {
-        "version": "366800754c6a66509f3786096d724b82bdda2dd409b407aa2eb0a56d6308bbf0",
-        "signature": "350a19e1002b623d221ca91a8550b0f4bc4493f8e5fbd9b3215791b99ebd222e"
+        "version": "9a3d34f4eb3dfad3ab8017bb9f162cd19e629755d605f11e9f47574653ed049a",
+        "signature": "8060344966c2c46e88a2db752b199546fad225f5e3149d15dd4fe856a1ce21b2"
       },
       "./src/exponential-moving-time-average.ts": {
         "version": "3946a69cf5483297240e64b85618711b65a8d7133ee67f343f0ce662e9a7b1f2",
@@ -1577,10 +1577,7 @@
       "./node_modules/typescript/lib/lib.esnext.bigint.d.ts",
       "./node_modules/queue/dist/parse-natural.d.ts",
       "./node_modules/queue/dist/index.d.ts",
-      "./src/continuous-moving-average.ts",
       "./src/exponential-moving-time-average.ts",
-      "./src/index.ts",
-      "./src/test-emta.ts",
       "./node_modules/@types/node/globals.d.ts",
       "./node_modules/@types/node/assert.d.ts",
       "./node_modules/@types/node/async_hooks.d.ts",
@@ -1626,7 +1623,10 @@
       "./node_modules/@types/node/ts3.2/util.d.ts",
       "./node_modules/@types/node/ts3.2/globals.d.ts",
       "./node_modules/@types/node/ts3.2/index.d.ts",
-      "./src/test-cma.ts"
+      "./src/continuous-moving-average.ts",
+      "./src/index.ts",
+      "./src/test-cma.ts",
+      "./src/test-emta.ts"
     ]
   },
   "version": "3.6.4"

@@ -9,7 +9,7 @@ declare class ContinuousMovingAverage {
     constructor(reserveFor: number);
     private clean;
     get(now?: number): number;
-    set(value: number, now?: number): void;
+    set(value: number, now?: number): number;
     private reCalcSum;
 }
 export default ContinuousMovingAverage;

@@ -42,8 +42,8 @@ class ContinuousMovingAverage {
         ) / this.reserveFor;
     }
 
-    public set(value: number, now = Date.now()) {
-        this.clean(now);
+    public set(value: number, now = Date.now()): number {
+        // this.clean(now);
         this.q.push({
             value, startTime: now,
         });
@@ -51,6 +51,7 @@ class ContinuousMovingAverage {
             += this.q[-2].value
             * (now - this.q[-2].startTime);
         if (++this.calcSumCount > this.q.length) this.reCalcSum();
+        return this.get(now);
     }
 
     private reCalcSum(): void {
